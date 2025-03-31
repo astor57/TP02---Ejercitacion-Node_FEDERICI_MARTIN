@@ -9,7 +9,7 @@ copiar(ARCHIVO_ENTRADA, ARCHIVO_SALIDA);
 function copiar(origen, destino) {
 
     fs.readFile(origen, 'utf8', (error, info) => {
-        if (err) {
+        if (error) {
             console.log(`Error al leer el archivo: ${error}`);
             return;
         }
